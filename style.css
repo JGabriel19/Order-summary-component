@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:ital,wght@0,200;0,400;0,500;0,600;1,200&family=Red+Hat+Display:wght@500;700;900&family=Sen&family=Ubuntu:wght@300;400;500;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Red Hat Display', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: hsl(225, 100%, 94%);
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+.container{
+  max-width: 450px;
+  background-color: white;
+  border-radius: 20px;
+}
+.hero img{
+  border-radius: 20px 20px 0 0;
+}
+.text-content{
+  padding: 10%;
+  text-align: center;
+}
+.title{
+  padding-bottom:20px;
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+.subtitle{
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+p{
+  color: hsl(224, 23%, 55%);
+  font-size: 16px;
+}
+.plan-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F8F9FE;
+  padding: 20px 25px;
+  border-radius: 15px;
+}
+.plan-box-left{
+  display: flex;
+  align-items: center;
+}
+.plan-text{
+  margin-left: 20px;
+  text-align: left;
+}
+.plan-text h5{
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.change{
+  font-weight: 700;
+  color: hsl(245, 75%, 52%);
+  transition: all .8s;
+}
+.change:hover{
+  color: #766CF1;
+  text-decoration: none;
+}
+.proceed-btn{
+  width: 100%;
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+  padding: 15px 0;
+  border: none;
+  border-radius: 10px;
+  margin: 30px 0;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .8s;
+  box-shadow: rgba(118, 108, 241, 0.45) 0px 13px 27px -5px, rgba(56, 41, 224, 0.4) 0px 8px 16px -8px;
+}
+.proceed-btn:hover{
+  background-color: #766CF1;
+}
+.cancel-btn{
+  text-decoration: none;
+  color:hsl(224, 23%, 55%);
+  font-weight: 700;
+  transition: all .8s;
+  
+}
+.cancel-btn:hover{
+  color: hsl(223, 47%, 23%);
+}
+@media screen and (max-width:375px) {
+  body{
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .hero img{
+    width: 100%;
+  }
+  .container{
+    width: 85%;
+  }
+  .text-content{
+    padding: 8%;
+  }
+  .plan-box{
+    padding: 20px 15px;
+  } 
+  .title{
+    font-size: 1.3rem;
+  }
+  .plan-text h5,p{
+    font-size:14px;
+    line-height: 1.4rem;
+    margin-bottom: 0;
+  }
+  a,.proceed-btn{
+    font-size:14px ;
+  }
+  
+}
